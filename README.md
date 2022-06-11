@@ -2,7 +2,7 @@
 
 ## **1.Condisional**
 
-condisional Statment bertugas mengecek kondisi spesifik untuk menjalankan sebuah perintah berdasarkan kondisi yang dinilai terbaik akan dipilih (true) maka kode dijalankan, (false) maka kode tidak berjalan
+Condisional Statment bertugas mengecek kondisi spesifik untuk menjalankan sebuah perintah berdasarkan kondisi yang dinilai terbaik akan dipilih (true) maka kode dijalankan, (false) maka kode tidak berjalan
 //sebagai contoh alur kita saat sedang mengabil makan maka kodisi yang akan kita lakukan bagaimana?
 
 ### ***(Condisional if else)***
@@ -60,15 +60,16 @@ kalo didalam sebuah kodingan, code yang berada di dalam sebuah block **Curly Bra
 
 ### **Local Scope dan Global Scope**
 
-***Local scope***, berfungsi untuk merubah variable yang terdapat di dalam function
+***Local scope***, bila fungsi berada diluar scope maka tidak dapat mengakses variabel yang berada didalam scope 
 
-***Global scope***, untuk menuliskan variable global kita wajib menuliskan global setelah mendefenisikan suatu fungsi, artinya kita akan mengakses nilai global dalam suatu fungsi
+***Global scope***, kita dapat mengakses variabel bila variabel dan fungsi tersebut berada diluar scope atau bisa juga mengakses variabel diluar scope dengan fungsi yang berada didalam scope 
 
-```js
-let scopeGlobal = 3;
-    const scopeLocal = 80;
-if (scopeLocal >= 80){
-    console.log("naik kelas" + scopeGlobal);
-}
+ ### ***variabel luar dapat diakses dari dalam***
+ Contoh;
+ ![](./img/Scope.jpeg)
 
-```
+ ### ***variabel didalam tidak dapat diakses dari luar***
+ tidak dapat Akses 
+
+ ![](./img/Scope2.jpeg)
+

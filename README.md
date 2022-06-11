@@ -56,19 +56,19 @@ bagaimana kita dapat memproses data di dalam ruang lingkup tertentu bisa diakses
 sebagai contoh ada 2 orang berada di daerah berbeda, pasti akan memikili suasana dan pemandangan berbeda pula
 yang tidak dimiliki daerah satu sama lain
 
-kalo didalam sebuah kodingan, code yang berada di dalam sebuah block(curly braces {} ) jadi bila kodingan berada dalam sebuah block maka kodingan tidak dapat diakses dari luar block tersebut
+kalo didalam sebuah kodingan, code yang berada di dalam sebuah block **Curly Braces { }**  jadi bila kodingan berada dalam sebuah block maka kodingan tidak dapat diakses dari luar block tersebut
 
 ### **Local Scope dan Global Scope**
 
 ***Local scope***, berfungsi untuk merubah variable yang terdapat di dalam function
 
 ***Global scope***, untuk menuliskan variable global kita wajib menuliskan global setelah mendefenisikan suatu fungsi, artinya kita akan mengakses nilai global dalam suatu fungsi
+
 ```js
-const jumlahAngka = 80;
-if (jumlahAngka >= 80){
-    console.log("naik kelas")
-}// naik kelas
+let scopeGlobal = 3;
+    const scopeLocal = 80;
+if (scopeLocal >= 80){
+    console.log("naik kelas" + scopeGlobal);
+}
 
 ```
-
-###  ***Global Scope*** 

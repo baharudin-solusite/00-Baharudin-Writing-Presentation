@@ -56,7 +56,7 @@ bagaimana kita dapat memproses data di dalam ruang lingkup tertentu bisa diakses
 sebagai contoh ada 2 orang berada di daerah berbeda, pasti akan memikili suasana dan pemandangan berbeda pula
 yang tidak dimiliki daerah satu sama lain
 
- ![](./img/dua%20tempat.jpeg)
+ ![](./img/scope3.jpeg)
 
 kalo didalam sebuah kodingan, code yang berada di dalam sebuah block **Curly Braces { }**  jadi bila kodingan berada dalam sebuah block maka kodingan tidak dapat diakses dari luar block tersebut.
 

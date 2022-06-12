@@ -94,8 +94,9 @@ let lebar1 = 20;
 let luas1 = panjang1 * lebar1;
 console.log(luas1);//180
 ```
-***A) Argumen dan parameter***
-Argumen dan Parameter berguna untuk mengetahui suatu nilai/angka sebuah Function 
+***A) Contoh Function***
+
+catatan; Argumen dan Parameter berguna untuk mengetahui suatu nilai/angka sebuah Function 
 ```js
 function luasArea(widht, height) {
     return widht * height
@@ -162,3 +163,30 @@ console.log("Public".repeatString(2));//11111
  ## **6 Array**
  Sebuah variabel yang dapat menampilkan banyak data dan Jenis tipe data
 
+```js
+//Memanggil sebuah nilai,
+let buah = ["Jeruk","Apel","Pisang","Rambutan"]
+buah.push = ("Anggur");
+
+console.log(buah[3]);//Rambutan
+
+// start,stop,step
+for (let i = 0; i < buah.length; i++){
+    console.log(buah[i]);
+}//Jeruk,Apel,Pisang,Rambutan,Anggur
+```
+
+```js
+// versi Parameter
+let binatang = ["ikan","sapi","ajing"]
+binatang.push("monyet")
+
+function arrayBuah(arr)
+{
+    for (let i = 0; i < binatang.length; i++){
+        console.log(binatang[i]);
+    }
+}
+arrayBuah(binatang)//ikat,sapi,ajing,monyet
+```
+ ## **7.Dom**

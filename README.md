@@ -170,7 +170,7 @@ String.prototype.repeatString = function (n) {
 console.log("Public".repeatString(2));//PublicPublic
 ```
  ## **6 Array**
- Sebuah variabel yang dapat menampilkan banyak data dan Jenis tipe data
+ digunakan untuk menyimpan banyak nilai dalam satu Variabel
 
 ```js
 //Memanggil sebuah nilai,

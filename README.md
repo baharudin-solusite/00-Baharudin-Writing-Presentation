@@ -53,8 +53,7 @@ switch (lampu){
 ## **2.Scope**
 bagaimana kita dapat memproses data di dalam ruang lingkup tertentu bisa diakses/tidak
 
-sebagai contoh ada 2 orang berada di daerah berbeda, pasti akan memikili suasana dan pemandangan berbeda pula
-yang tidak dimiliki daerah satu sama lain
+sebagai contoh ada 2 orang berada di tepat berbeda, pasti akan memikili suasana dan pemandangan berbeda pula
 
  ![](./img/scope3.jpeg)
 
@@ -106,24 +105,27 @@ console.log(luasArea(15,17));//255
 console.log(luasArea(17,10));//170
 console.log(luasArea(100,10));//1000
 ```
-***B.Default Parameters***
+***B)Default Parameters***
 
 Default paramaters digunakan untuk memberikan nilai awal/default pada parameter function.
 
 Default parameters bisa digunakan jika kita ingin menjaga function agar tidak error saat dipanggil tanpa argumen
+```js
+function defaultParameter(nama = "Public"){
+    return "Hello" + nama;
+}
 
-***C)Function Helper***
+console.log(defaultParameter());//Output; "HelloPublic"
+```
 
-Kita bisa menggunakan function yang sudah dibuat pada function lain
-
-***D.Arrow Function***
+***C)Arrow Function***
 
 Arrow function adalah cara lain menuliskan function. Ini adalah fitur terbaru yang ada pada ES6 (Javascript Version)
 
 ## **4.Looping**
 mengulang sebuah instruksi hingga kondisi terpenuhi atau jika kondisi telah terpenuhi.
 
-sebagai contoh; orang yang ingin pergi keluar dia akan menata barang apa saja yang akan dibawa bila masih ada akan mencari kmbali barang tersebut
+sebagai contoh; orang yang ingin berpergian pasti akan akan melihat barang bawaaanya sudah terpenuhi/tidak bila belum terpenuhi maka barang akan dicari lagi
 
 ***A)Manual Looping***
 kita menulis secara manual sebuah pengulangan
@@ -134,6 +136,12 @@ console.log(3)//3
 console.log(4)//4
 console.log(5)//5
 ```
+***B)Outomatis Looping***
+```js
+//for(start,stop,step)
+for (let i = 0; i <= 5; i++){
+    console.log(i);
+}//output; 1 2 3 4 5
  ## **5.Prototype**
 
  yaitu sebuah fitur bawaan javascript yang bisa ditambahkan pada sebuah properti
@@ -189,4 +197,10 @@ function arrayBuah(arr)
 }
 arrayBuah(binatang)//ikat,sapi,ajing,monyet
 ```
- ## **7.Dom**
+ ## **7.Dom(dokumen objeck model}**
+ DOM berguna untuk mengakses sebuah code html atau css menggunakan JavaScript. Biasanya DOM digunakan setelah codingan selesai. Jadi DOM sendiri akan mendapat semua kontrol html dan juga css
+
+ - Membuat HTML
+ - Modifikasi CSS dan HTML
+ - Modifikasi Atribut HTML
+

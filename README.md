@@ -167,7 +167,7 @@ kita dapat menambah properti menggunakan custem properti
 String.prototype.repeatString = function (n) {
     return this.repeat(n);
 };
-console.log("Public".repeatString(2));//11111
+console.log("Public".repeatString(2));//PublicPublic
 ```
  ## **6 Array**
  Sebuah variabel yang dapat menampilkan banyak data dan Jenis tipe data

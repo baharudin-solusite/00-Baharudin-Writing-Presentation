@@ -59,9 +59,9 @@ sebagai contoh ada 2 orang berada di tepat berbeda, pasti akan memikili suasana 
 
 kalo didalam sebuah kodingan, code yang berada di dalam sebuah block **Curly Braces { }**  jadi bila kodingan berada dalam sebuah block maka kodingan tidak dapat diakses dari luar block tersebut.
 
-***1.*** bila fungsi berada diluar scope maka tidak dapat mengakses variabel yang berada didalam scope 
+***local scope*** bila fungsi berada diluar scope maka tidak dapat mengakses variabel yang berada didalam scope 
 
-***2.*** kita dapat mengakses variabel bila variabel dan fungsi tersebut berada diluar scope atau bisa juga mengakses variabel diluar scope dengan fungsi yang berada didalam scope 
+***global scope*** kita dapat mengakses variabel bila variabel dan fungsi tersebut berada diluar scope atau bisa juga mengakses variabel diluar scope dengan fungsi yang berada didalam scope 
 
  ### ***variabel luar dapat diakses dari dalam***
  Contoh;
@@ -204,4 +204,11 @@ arrayBuah(binatang)//ikat,sapi,ajing,monyet
  - Membuat HTML
  - Modifikasi CSS dan HTML
  - Modifikasi Atribut HTML
+
+```js
+// membaca title
+console.log(document.title);
+
+// mengganti nama title
+document.title = "Public";
 

@@ -142,6 +142,7 @@ console.log(5)//5
 for (let i = 0; i <= 5; i++){
     console.log(i);
 }//output; 1 2 3 4 5
+```
  ## **5.Prototype**
 
  yaitu sebuah fitur bawaan javascript yang bisa ditambahkan pada sebuah properti

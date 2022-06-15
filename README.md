@@ -211,4 +211,13 @@ console.log(document.title);
 
 // mengganti nama title
 document.title = "Public";
+```
 
+
+
+## **8.Module system***
+
+Module System adalah sebuah cara bagi bahasa pemrograman agar bisa menerapkan isolasi kode dari satu file terhadap file lain, serta memudahkan untuk menyertakan kode dari file lain ke dalam file yang membutuhkannya.
+
+## **9.Rekursi**
+Rekursi adalah proses pengulangan sesuatu dengan cara kesamaan-diri. Sebagai contohnya, saat dua cermin berada paralel antara satu dengan yang lain, gambar yang tertangkap adalah suatu bentuk rekursi tak-terbatas.

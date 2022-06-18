@@ -257,7 +257,7 @@ student[song] = 'saya suka'//pop ; saya suka
 ```
 
 ## **2).DOM**
-
+DOM merupakan kependekan dari Document Object Model, DOM ini yakni object model standar bagi XML dan HTML yang memiliki sifat platform independent. Saat membuka sebuah halaman web pada browser, maka file HTML dari web akan dimuat serta ditampilkan pada layar perangkat
 
 
 ## **3).Module system**

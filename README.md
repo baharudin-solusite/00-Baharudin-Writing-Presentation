@@ -213,11 +213,59 @@ console.log(document.title);
 document.title = "Public";
 ```
 
+# ****MINGGU KE 3****
+
+## **1).Object**
+
+Object adalah sekumpulan list dari tipe data primitif (terkadang juga tipe data) yang menyimpan nilai dengan konsep berpasangan value. Tiap item (yang lebih dikenal dengan nama variabel) disebut dengan property, dan function disebut dengan method.
+
+Analoginya sebuah mobil sebagai Objeck, benda mati dan benda hidup didalamnya sebagai properti/key,   
+
+```js
+
+// cara membuat Object
+let dataObject = { key: "velue" };
+
+```
+
+```js
+// contoh object
+let preson = {
+    nama: "Baharudin",
+    umur: 20,
+    hoby: "Melukis",
+    'makanan kesukaan': 'tempe'
+}
+// menampilkan semua data
+console.log(preson);
+```
+
+```js
+// cara mengupdete object dapat dilakukan dengan 2 cara
+// dot notation dan bracket
+
+// Updete menggunakan dot (.)
+student.hoby = 'memancing';
+
+// updete data menggunakan Bracket dapat menambah sebuah data menggunkan spasi
+student['address'] = 'surakarta';
+
+// menambahkan object menggunakan variabel
+let song = "pop";
+student[song] = 'saya suka'//pop ; saya suka
+
+```
+
+## **2).DOM**
 
 
-## **8.Module system***
+
+## **3).Module system**
 
 Module System adalah sebuah cara bagi bahasa pemrograman agar bisa menerapkan isolasi kode dari satu file terhadap file lain, serta memudahkan untuk menyertakan kode dari file lain ke dalam file yang membutuhkannya.
 
-## **9.Rekursi**
+## **4).Rekursi**
 Rekursi adalah proses pengulangan sesuatu dengan cara kesamaan-diri. Sebagai contohnya, saat dua cermin berada paralel antara satu dengan yang lain, gambar yang tertangkap adalah suatu bentuk rekursi tak-terbatas.
+## **5).Web Storege**
+
+

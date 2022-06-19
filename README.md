@@ -256,16 +256,125 @@ student[song] = 'saya suka'//pop ; saya suka
 
 ```
 
-## **2).DOM**
-DOM merupakan kependekan dari Document Object Model, DOM ini yakni object model standar bagi XML dan HTML yang memiliki sifat platform independent. Saat membuka sebuah halaman web pada browser, maka file HTML dari web akan dimuat serta ditampilkan pada layar perangkat
+
+## **2).Module system**
+
+Adalah sebuah cara bagi bahasa pemrograman agar bisa menerapkan isolasi kode dari satu file terhadap file lain, serta memudahkan untuk menyertakan kode dari file lain ke dalam file yang membutuhkannya dengan cara export dan impord.
 
 
-## **3).Module system**
 
-Module System adalah sebuah cara bagi bahasa pemrograman agar bisa menerapkan isolasi kode dari satu file terhadap file lain, serta memudahkan untuk menyertakan kode dari file lain ke dalam file yang membutuhkannya.
+cara mengaitkan module JS ke sebuah html
+```js
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
 
-## **4).Rekursi**
-Rekursi adalah proses pengulangan sesuatu dengan cara kesamaan-diri. Sebagai contohnya, saat dua cermin berada paralel antara satu dengan yang lain, gambar yang tertangkap adalah suatu bentuk rekursi tak-terbatas.
-## **5).Web Storege**
 
+
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
+```
+index js
+```js
+//data yang ysng telah export masuk akan di import ke index js 
+import { fruit, fruitTropic } from "./fruit.js";
+
+// cara memanggil data
+console.log(fruit);
+console.log(fruitTropic);
+
+```
+
+fruit js
+```js
+let fruit = ["apple", "mango", "banana"];
+let fruitTropic = "avocado";
+export { fruit, fruitTropic };//yang akan diexport
+
+
+```
+
+## **3).Rekursi**
+Rekursi adalah proses pengulangan sesuatu dengan cara kesamaan-diri. Sebagai contohnya, saat dua cermin berada paralel antara satu dengan yang lain, gambar yang tertangkap adalah suatu bentuk rekursi tak-terbatas dalam coding function yang memanggil dirinya sendiri sampai kondisi terpenuhi.
+
+ ![](./img/Recursion.png)
+
+
+
+ ```js
+//  REKURSI
+function countDown(number) {
+    console.log("number rekursif", number);
+    let nextNumber = number - 1;
+  
+    if (nextNumber > 0) {
+      countDown(nextNumber);
+    }
+  }
+  countDown(5); //akan memanggil; number reqursif 1 sampai 5
+
+
+//   LOOPING
+  
+  for (let number = 5; number > 0; number--) {
+    console.log("number looping", number);
+  }
+  //akan memanggil; number looping 1 sampai 5
+  ```
+
+
+
+## **4).Web Storege**
+ adalah salah satu Web API yang dapat menyimpan data secara lokal pada sisi client. Berbeda dengan objek atau array, data yang disimpan pada objek atau array JavaScript bersifat sementara, dan akan hilang jika terjadi reload atau pergantian URL pada browser.
+
+
+
+### ***Local Storage dan Session Storage***
+
+**Local Storage**
+ merupakan salah satu cara yang dapat digunakan untuk menyimpan data di web browser. Pada localStorage penyimpanan data tidak memiliki kadaluarsa, artinya data yang disimpan tetap ada meskipun browser telah ditutup.
+
+**Session Storage**
+data yang disimpan akan hilang jika browes ditutup Pada dasarnya untuk menggunakan localStorage dan sessionStorage sama, terlebih dahulu kita harus mengatur key dan value nya.
+
+
+
+![](./img/localStorage.jpeg)
+
+ ```js
+//  penulisan local Srorage dengan key name dan velue skilvul
+localStorage.setItem("name", "skilvul");
+localStorage.setItem("name2", "miana");
+localStorage.setItem("password", "password123");
+localStorage.setItem("umur", 2);
+localStorage.setItem("umur2", "2");
+```
+![](./img/localStorage2.jpeg)
+```js
+// cara pemanggilan data 
+const nameStorage = localStorge.getItem("name");
+
+console.log(nameStorage);//skilvul
+console.log(localStorage.getItem("password"));//password123
+
+ ```
+![](./img/localStorage3.jpeg)
+ ```js
+// cara menghapus item localStorage
+localStorage.removeItem("name2");//menghapus peritem
+
+localStorage.clear();//menghapus semua item
+ ```
+
+
+## 5).asynchronous
+sync/Await merupakan sebuah syntax khusus yang digunakan untuk menangani Promise agar penulisan code lebih efisien dan rapih.
 

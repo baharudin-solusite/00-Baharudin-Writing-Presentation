@@ -375,7 +375,7 @@ localStorage.clear();//menghapus semua item
  ```
 
 
-## 5).asynchronous
+## 5).Asynchronous
 sync/Await merupakan sebuah syntax khusus yang digunakan untuk menangani Promise agar penulisan code lebih efisien dan rapih. (Memanggil dengan jangka waktu tertentu)
 
 

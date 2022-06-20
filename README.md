@@ -376,5 +376,127 @@ localStorage.clear();//menghapus semua item
 
 
 ## 5).asynchronous
-sync/Await merupakan sebuah syntax khusus yang digunakan untuk menangani Promise agar penulisan code lebih efisien dan rapih.
+sync/Await merupakan sebuah syntax khusus yang digunakan untuk menangani Promise agar penulisan code lebih efisien dan rapih. (Memanggil dengan jangka waktu tertentu)
 
+
+async callback seperti kita sedang menunggu sebuah pekerjaan yang sedang berjalan lalu kita melakukan sebuah perkerjaan lagi untuk menggunakan waktu se efisien mungkin
+```js
+// async callback
+
+const mainFunc = (number1, number2, callback) => {
+    console.log(number1 * number2);
+    callback();
+    console.log(number1 + number2);
+  };
+  
+  const callbackFunc = () => {
+    console.log("callback");
+  };
+  
+  mainFunc(10, 20, callbackFunc);//200 callback 30 
+```
+
+berhubungan dengan delay atau jeda waktu milisecon
+
+```js
+// setTimeOut
+const p1 = () => {
+  console.log("proses 1");
+};
+
+const p2 = () => {
+  setTimeout(() => {
+    console.log("proses 2");
+  }, 5000);
+};
+
+const p3 = () => {
+  p1();
+  p2();
+  console.log("proses 3");
+};
+
+p3();//proses yang akan dipanggil; proses 3 proses 1 proses 2
+```
+
+
+Promises adalah sebuah janji atau kemungkinan yang akan terjadi kedepanya( entah terjadi, ditunda ,dan dibatalkan )
+
+
+![](./img/bendera.jpeg)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #list-flags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  </style>
+  <body>
+   
+
+<!-- slide tugas 2 -->
+<div id="list-flags">
+ <div>
+    <img src="" alt="" width="100">
+    <h3></h3>
+ </div>
+</div>
+
+
+
+
+    <p>follower <span id="followers">5</span></p>
+
+
+    <script src="./tugas.js"></script>
+  </body>
+</html>
+
+
+```
+
+
+
+
+
+```js
+
+let listOfFlang = document.getElementById("list-flags");
+
+
+  const getFlags = async () => {
+    const url = "https://restcountries.com/v2/all";
+  
+    // melakukan fetch data
+    let response = await fetch(url);
+    let result = await response.json();
+    // membuka paket
+    result.forEach((item) => {
+
+     listOfFlang.innerHTML += 
+     
+    `<div>
+        <img src="${item.flags.svg}" alt="" width="100">
+         <h3>${item.name}</h3>
+     </div>`;
+    });
+    console.log(result);
+
+  
+  };
+  
+    // function async jika di dalamnya dikasih return
+    // maka function ini akan bernilai sebuah promise
+    // return result
+  getFlags();
+```

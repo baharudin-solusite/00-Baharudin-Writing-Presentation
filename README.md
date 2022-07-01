@@ -332,7 +332,7 @@ function countDown(number) {
 
 
 
-## **4).Web Storege**
+## **4).Web Storage**
  adalah salah satu Web API yang dapat menyimpan data secara lokal pada sisi client. Berbeda dengan objek atau array, data yang disimpan pada objek atau array JavaScript bersifat sementara, dan akan hilang jika terjadi reload atau pergantian URL pada browser.
 
 
@@ -376,7 +376,7 @@ localStorage.clear();//menghapus semua item
 
 
 ## 5).Asynchronous
-sync/Await merupakan sebuah syntax khusus yang digunakan untuk menangani Promise agar penulisan code lebih efisien dan rapih. (Memanggil dengan jangka waktu tertentu)
+sebuah syntax khusus yang digunakan untuk menangani Promise agar penulisan code lebih efisien dan rapih. (Memanggil dengan jangka waktu tertentu)
 
 
 async callback seperti kita sedang menunggu sebuah pekerjaan yang sedang berjalan lalu kita melakukan sebuah perkerjaan lagi untuk menggunakan waktu se efisien mungkin
